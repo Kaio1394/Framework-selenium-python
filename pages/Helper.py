@@ -19,3 +19,6 @@ class Helper:
 
     def close(self):
         self.driver.close()
+
+    def get_url_browser(self):
+        return self.driver.current_url
