@@ -1,7 +1,7 @@
 from selenium import webdriver
-
+from webdriver_manager.chrome import ChromeDriverManager
 
 class DriverUtil:
     @staticmethod
     def get_instance():
-        return webdriver.Chrome('C:/Users/Usuario/Documents/python/Framework-selenium-python/driver/chromedriver.exe')
+        return webdriver.Chrome(ChromeDriverManager().install())
